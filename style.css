@@ -1,0 +1,137 @@
+
+/* Modern Reset and Festive Background */
+    body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #00eeff, #2b9c49);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #1e293b;
+    overflow-x: hidden;
+    }
+
+/* 3D Container Design */
+    .birthday-container {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 450px;
+    width: 90%;
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+    }
+
+.birthday-container:hover {
+    transform: translateY(-15px);
+    }
+
+/* Typography */
+h1 {
+    color: #5048ec;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    }
+
+.wishes {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    }
+
+/* Interactive Pulsing Heart Overlay */
+.heart-icon {
+    font-size: 3rem;
+    color: #eeeb4e;
+    display: inline-block;
+    animation: pulse 1.0s infinite;
+    cursor: pointer;
+    }
+
+/* Virtual Cake Layout */
+.cake {
+    width: 150px;
+    height: 100px;
+    background: #b45309;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    margin: 40px auto 20px auto;
+    box-shadow: inset 0 10px 0 #fde047;
+    }
+
+/* Layer Frosting Design */
+.cake::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 15px;
+    background: #f4f472;
+    top: 30px;
+    left: 0;
+    box-shadow: 0 25px 0 #38bdf8;
+    }
+
+/* Candle Elements */
+.candle {
+    width: 8px;
+    height: 40px;
+    background: #f43f5e;
+    position: absolute;
+    top: -27px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 4px 4px 0 0;
+    }
+
+/* Flickering Candle Flame Animation */
+.flame {
+    width: 12px;
+    height: 18px;
+    background: #f59e0b;
+    border-radius: 50% 50% 20% 20%;
+    position: absolute;
+    top: -22px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: flicker 0.6s infinite alternate;
+    box-shadow: 0 0 10px #f59e0b;
+    }
+
+/* Interactive Button Design */
+.celebrate-btn {
+    background-color: #ec4899;
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(170, 72, 236, 0.4);
+    transition: all 0.2s ease;
+    }
+
+.celebrate-btn:hover {
+    background-color: #db2777;
+    transform: scale(1.05);
+    }
+
+.celebrate-btn:active {
+    transform: scale(0.95);
+    }
+
+/* Animation Keyframes */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.15); }
+    100% { transform: scale(1); }
+    }
+@keyframes flicker {
+    0% { transform: translateX(-50%) scale(1); opacity: 0.9; }
+    100% { transform: translateX(-50%) scale(1.1) rotate(2deg); opacity: 1; }
+    }
